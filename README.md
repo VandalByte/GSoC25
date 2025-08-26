@@ -7,7 +7,6 @@
 |----------------------|-----------|
 | **Contributor**      | [Vandal Byte](https://github.com/VandalByte) |
 | **Sub-Organization** | [Borg Collective](https://github.com/borgbase) |
-| **Proposal Link**    | Borg Collective Proposal |
 | **Organization**     | [Python Software Foundation](https://python-gsoc.org/) |
 | **Project Link**     | [Project](https://summerofcode.withgoogle.com/programs/2025/projects/GQrztSUR) |
 | **Mentors**          | [Manuel Riel (m3nu)](https://github.com/m3nu), [Dan Helfman (witten)](https://github.com/witten) |
@@ -36,24 +35,27 @@ The primary goal of this GSoC project was to improve the code quality, user expe
 - Added a new dropdown button in the UI to house the less-used functionalities, as well as a button for changing the passphrase.
 - Created a new UI based on suggestions from discussions and previous unmerged PRs.  
 - The new UI was integrated into the main application UI.
-- I added tests to cover my implementation and ran existing tests to ensure that no other features were broken as a result of this.
+- Used existing passphrase fields to reduce code duplication.
+- Added tests to cover my implementation and ran existing tests to ensure that no other features were broken as a result of this.
 
 ![Passphrase change](https://private-user-images.githubusercontent.com/86826719/465335310-0b3236e0-e951-4250-8d12-21919e7d4d46.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMTA2ODUsIm5iZiI6MTc1NjIxMDM4NSwicGF0aCI6Ii84NjgyNjcxOS80NjUzMzUzMTAtMGIzMjM2ZTAtZTk1MS00MjUwLThkMTItMjE5MTllN2Q0ZDQ2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDEyMTMwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU1NDM1YzlkYmIxZTFkOTA0OWU5MDQ2MzQ4MGQ0OGIyMDFkMDM4YTI0YTI1ZGQ1YjE5ZGJmYzQ0ZDAxODY1MTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Q8t_DN8bbXTm74tk7rJGh5pgBa5-gZ4mhWMZnYG6Ksw)
 
 ### [Unified File Dialog](https://github.com/borgbase/vorta/pull/2237)
 - Built a custom Qt-based file selector (`VortaFileDialog`) to support both files and directories with `QTree`.  
 - Replaced existing separate dialogs to simplify and standardize file selection.  
-- Ensured compatibility with different OS environments through comprehensive testing.  
+- Added a new UI for file dialog which included features like path selection, goto home button, goto parent button, tree view of the directories and files and an option to view/select hidden files.
+- Verified working of the new dialog and it's addition to the source list.
 - Improved overall consistency and reduced code duplication in the selection flow.
+- Added tests to cover my implementation and ran existing tests to ensure that no other features were broken as a result of this.
 
 ![Unified File Dialog](https://private-user-images.githubusercontent.com/86826719/447232822-0686731d-9ad7-4efc-baa3-95c952ef9faf.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMTA2ODYsIm5iZiI6MTc1NjIxMDM4NiwicGF0aCI6Ii84NjgyNjcxOS80NDcyMzI4MjItMDY4NjczMWQtOWFkNy00ZWZjLWJhYTMtOTVjOTUyZWY5ZmFmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDEyMTMwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk3OGFlYmE5ODhjYWUzZjRjMWU2ZDhjM2Y0ZTlhMDk3ZDA2YzZhMmI2OGRhMDZjOTNmNDViNjNlZDZjZjllZGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.VDtB0WAwLn63FnAxNT6acnIUgcjtP_atVUO6rw-qpqk)
 
 ### [New File Dialog Integration in Exclusion Dialog](https://github.com/borgbase/vorta/pull/2252)
-- Implemented file dialog support for excluding files and directories from backups.  
-- Allowed users to visually select exclusions rather than typing them manually.  
+- Implemented file dialog support for excluding files and directories from backup using exclusion patterns.  
+- Allowed users to visually select exclusions rather than typing the patterns manually.  
 - Integrated with the unified file selector to maintain consistency.  
-- Ensured excluded paths persist across sessions and profiles.  
-- Added validation and feedback for incorrect or unsupported paths.
+- Ensured excluded paths persist across each backup.  
+- Added tests to cover my implementation and ran existing tests to ensure that no other features were broken as a result of this.
 
 ![File Dialog Integration in Exclusion Dialog](https://private-user-images.githubusercontent.com/86826719/465325626-b5d9e7b9-45bf-4a65-acb7-3d52a75e9214.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMTA2ODcsIm5iZiI6MTc1NjIxMDM4NywicGF0aCI6Ii84NjgyNjcxOS80NjUzMjU2MjYtYjVkOWU3YjktNDViZi00YTY1LWFjYjctM2Q1MmE3NWU5MjE0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDEyMTMwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYwNjVkNDA2YmY2ZDM1M2E4MDY5MzkzMjk4MmI4MmFlYzEyOTY2YWU4ZGY2NDA3ZmQyZDlmZDYxOWYyNzliODkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.eUE8Ki290RZfZG97vRJgg6c7KuDIjo96xNzaO2OXav0)
 
