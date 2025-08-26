@@ -38,7 +38,8 @@ The primary goal of this GSoC project was to improve the code quality, user expe
 - Used existing passphrase fields to reduce code duplication.
 - Added tests to cover my implementation and ran existing tests to ensure that no other features were broken as a result of this.
 
-![Passphrase change](https://private-user-images.githubusercontent.com/86826719/465335310-0b3236e0-e951-4250-8d12-21919e7d4d46.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMTA2ODUsIm5iZiI6MTc1NjIxMDM4NSwicGF0aCI6Ii84NjgyNjcxOS80NjUzMzUzMTAtMGIzMjM2ZTAtZTk1MS00MjUwLThkMTItMjE5MTllN2Q0ZDQ2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDEyMTMwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU1NDM1YzlkYmIxZTFkOTA0OWU5MDQ2MzQ4MGQ0OGIyMDFkMDM4YTI0YTI1ZGQ1YjE5ZGJmYzQ0ZDAxODY1MTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Q8t_DN8bbXTm74tk7rJGh5pgBa5-gZ4mhWMZnYG6Ksw)
+
+<img width="632" height="250" alt="465335310-0b3236e0-e951-4250-8d12-21919e7d4d46" src="https://github.com/user-attachments/assets/2c70b607-7da5-460c-adfc-614f33022406" />
 
 ### [Unified File Dialog](https://github.com/borgbase/vorta/pull/2237)
 - Built a custom Qt-based file selector (`VortaFileDialog`) to support both files and directories with `QTree`.  
@@ -48,7 +49,7 @@ The primary goal of this GSoC project was to improve the code quality, user expe
 - Improved overall consistency and reduced code duplication in the selection flow.
 - Added tests to cover my implementation and ran existing tests to ensure that no other features were broken as a result of this.
 
-![Unified File Dialog](https://private-user-images.githubusercontent.com/86826719/447232822-0686731d-9ad7-4efc-baa3-95c952ef9faf.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMTA2ODYsIm5iZiI6MTc1NjIxMDM4NiwicGF0aCI6Ii84NjgyNjcxOS80NDcyMzI4MjItMDY4NjczMWQtOWFkNy00ZWZjLWJhYTMtOTVjOTUyZWY5ZmFmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDEyMTMwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk3OGFlYmE5ODhjYWUzZjRjMWU2ZDhjM2Y0ZTlhMDk3ZDA2YzZhMmI2OGRhMDZjOTNmNDViNjNlZDZjZjllZGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.VDtB0WAwLn63FnAxNT6acnIUgcjtP_atVUO6rw-qpqk)
+<img width="994" height="621" alt="447232822-0686731d-9ad7-4efc-baa3-95c952ef9faf" src="https://github.com/user-attachments/assets/ced2c4ce-f4f4-45f1-8132-aba4c41c10a0" />
 
 ### [New File Dialog Integration in Exclusion Dialog](https://github.com/borgbase/vorta/pull/2252)
 - Implemented file dialog support for excluding files and directories from backup using exclusion patterns.  
@@ -57,7 +58,8 @@ The primary goal of this GSoC project was to improve the code quality, user expe
 - Ensured excluded paths persist across each backup.  
 - Added tests to cover my implementation and ran existing tests to ensure that no other features were broken as a result of this.
 
-![File Dialog Integration in Exclusion Dialog](https://private-user-images.githubusercontent.com/86826719/465325626-b5d9e7b9-45bf-4a65-acb7-3d52a75e9214.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTYyMTA2ODcsIm5iZiI6MTc1NjIxMDM4NywicGF0aCI6Ii84NjgyNjcxOS80NjUzMjU2MjYtYjVkOWU3YjktNDViZi00YTY1LWFjYjctM2Q1MmE3NWU5MjE0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI2VDEyMTMwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYwNjVkNDA2YmY2ZDM1M2E4MDY5MzkzMjk4MmI4MmFlYzEyOTY2YWU4ZGY2NDA3ZmQyZDlmZDYxOWYyNzliODkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.eUE8Ki290RZfZG97vRJgg6c7KuDIjo96xNzaO2OXav0)
+<img width="543" height="450" alt="465325626-b5d9e7b9-45bf-4a65-acb7-3d52a75e9214" src="https://github.com/user-attachments/assets/a4f26a37-40b5-465f-ba0b-2714b3c9a065" />
+
 
 ## 📌 Current State
 All proposed tasks except PR [#2252](https://github.com/borgbase/vorta/pull/2252) have been successfully completed and merged upstream. The codebase is now cleaner and easier to maintain, and the overall user experience has seen noticeable improvements.
